@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import styles from './App.css';
+//import Home from './components/Home/Home';
+import Homebutton from './components/Homebutton/Homebutton';
+import Breakfast from './components/Sections/Breakfast/Breakfast';
+import New from './components/Sections/New/New';
+//import Login from './components/Login/Login'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.container}>
+      <Homebutton />
+      <New />
     </div>
-  );
+  )
 }
 
 export default App;
+
+/*
+import { Routes, Route } from 'react-router-dom';
+import Animals from './components/Sections/Animals/Animals';
+import Breakfast from './components/Sections/Breakfast/Breakfast';
+import Children from './components/Sections/Children/Children';
+
+<Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/animals" element={<Animals />} />
+          <Route path="/breakfast" element={<Breakfast />} />
+          <Route path="/children" element={<Children />} />
+      </Routes>
+*/

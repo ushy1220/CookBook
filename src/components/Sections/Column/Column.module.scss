@@ -1,0 +1,17 @@
+.container {
+    display: inline;
+    width: 60%;
+    max-height: 400px;
+    background: white;
+    margin-top: 200px;
+    padding: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 0 rgba(0,0,0,0.3);
+    color: black;
+    overflow-y: auto;
+    z-index: 999;
+
+    &:last-child {
+        margin: 0 0 1 0;
+    }
+}
