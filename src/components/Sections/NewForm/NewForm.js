@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
 import styles from './New.module.scss';
 
-const New = () => {
+const NewForm = () => {
 
     const [title, setTitle] = useState('');
     const [value, setValue] = useState('');
@@ -79,4 +79,4 @@ const New = () => {
     
 }
 
-export default New;
+export default NewForm;

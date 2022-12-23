@@ -1,7 +1,7 @@
 import styles from './Breakfast.module.scss';
-import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import Column from '../Column/Column';
+import Homebutton from '../../Homebutton/Homebutton';
 
 const Breakfast = () => {
 
@@ -14,6 +14,7 @@ const Breakfast = () => {
 
     return(
         <div className={styles.container}>
+            <Homebutton />
             <div className={styles.content}>
                 {recipes.map(recipe => 
                 <li key={recipe.id} className={styles.recpie}> 

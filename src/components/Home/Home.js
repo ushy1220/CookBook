@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div className={styles.container}>
             <div className="col">
-                <a href="/new" className={styles.link}>
+                <a href="/newrecipe" className={styles.link}>
                     <button className={styles.button}>Nowe (Oceń!)</button>
                 </a>
                 <a href="/breakfast" className={styles.link}>

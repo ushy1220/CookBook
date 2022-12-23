@@ -1,0 +1,15 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    border: 1px solid black;
+    height: 100vh;
+    background: $background;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    list-style-type: none;    
+}
+
