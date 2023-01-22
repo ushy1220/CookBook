@@ -1,10 +1,6 @@
 .container {
-    display: flex;
-    width: 100%;
     min-height: 100vh;
-    height: auto;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 50px;
 }
 
 .form {
@@ -14,6 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .top {
@@ -62,14 +59,18 @@
     align-content: center;
 }
 
+.options {
+    padding: 10px;
+}
+
 select {
     display: block;
-    height: 30px;
+    height: 40px;
     width: 80%;
     margin-bottom: 20px;
-    padding: 3px;
     font-size: 15px;
     border-radius: 15px;
+    padding-left: 5px;
 }
 
 .middle {

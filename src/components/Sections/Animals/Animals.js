@@ -3,10 +3,11 @@ import Homebutton from '../../Homebutton/Homebutton';
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
 import Column from '../Column/Column';
+import NewRecipeButton from '../../NewRecipeButton/NewRecipeButton';
 
 const Animals = () => {
 
-    const recipes = useSelector(state => state.recipes)
+    const recipes = useSelector(state => state.Animals)
     const dispatch = useDispatch();
 
     const report = recipeId => {
@@ -16,6 +17,7 @@ const Animals = () => {
     return(
         <div className={styles.container}>
             <Homebutton />
+            <NewRecipeButton />
             <div className={styles.content}>
                 {recipes.map(recipe => 
                 <li key={recipe.id} className={styles.recpie}> 

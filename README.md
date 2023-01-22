@@ -77,3 +77,6 @@ yarn add redux@4.2.0 react-redux@7.2.5
 yarn add redux-devtools-extension@2.13.9
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+
+yarn add react-modal
+

@@ -1,4 +1,5 @@
 import { legacy_createStore as createStore} from 'redux';
+import initialState from './initialState';
 
 const reducer = (state, action) => {
     switch(action.type) {
@@ -10,22 +11,7 @@ const reducer = (state, action) => {
   return state;
 };
 
-const initialState = {
-    recipes: [
-        {
-          id: 1, 
-          section: 'studenckie',
-          title: 'Strucel po turkmenistańsku', 
-          ingredients: [
-            'paprika', 
-            'eggs', 
-            'french ciasto', 
-            '200 gram boczku'],
-          content: 
-            'Przepis...'
-        },
-    ]
-};
+
 
 const store = createStore(
   reducer,

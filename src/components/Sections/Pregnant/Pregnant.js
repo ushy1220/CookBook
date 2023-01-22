@@ -1,10 +1,11 @@
-import styles from './Pregnat.module.scss';
+import styles from './Pregnant.module.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import Homebutton from '../../Homebutton/Homebutton';
 import Column from '../Column/Column';
+import NewRecipeButton from '../../NewRecipeButton/NewRecipeButton';
 
-const Pregnat = () => {
-    const recipes = useSelector(state => state.recipes)
+const Pregnant = () => {
+    const recipes = useSelector(state => state.Pregnant)
     const dispatch = useDispatch();
 
     const report = recipeId => {
@@ -14,6 +15,7 @@ const Pregnat = () => {
     return(
         <div className={styles.container}>
             <Homebutton />
+            <NewRecipeButton />
             <div className={styles.content}>
                 {recipes.map(recipe => 
                 <li key={recipe.id} className={styles.recpie}> 
@@ -26,4 +28,4 @@ const Pregnat = () => {
     )
 }
 
-export default Pregnat;
+export default Pregnant;

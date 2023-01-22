@@ -1,6 +1,7 @@
 import { useDispatch } from 'react-redux';
 import React, { useState } from 'react';
-import styles from './New.module.scss';
+import styles from './NewForm.module.scss';
+import Homebutton from '../../Homebutton/Homebutton';
 
 const NewForm = () => {
 
@@ -8,22 +9,24 @@ const NewForm = () => {
     const [value, setValue] = useState('');
     const [ingredients, setIngredients] = useState('');
     const [content, setContent] = useState('');
-    const [author, setAuthor] = useState('');
+    const [category, setCategory] = useState('');
+    //const [author, setAuthor] = useState('');
 
     const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        dispatch({ type: 'ADD_RECIPE', payload: {title, value, ingredients, content, author} });
+        dispatch({ type: 'ADD_RECIPE', payload: {title, value, ingredients, content, category/*author*/} });
         setTitle('');
         setIngredients('');
         setContent('');
-        setAuthor('');
+        //setAuthor('');
     }
 
     return (
         <div className={styles.container}>
+            <Homebutton />
             <form className={styles.form} onSubmit={handleSubmit}>
 
                 <div className={styles.top}>
@@ -33,7 +36,7 @@ const NewForm = () => {
                     </div>
                     <div className={styles.category}>
                         <h4 className={styles.title}>Kategoria</h4>
-                        <select name={styles.options} id="cars">
+                        <select name={styles.options} onChange={e => setCategory(e.target.value)} required id="categories">
                             <option value="breakfast">Śniadania</option>
                             <option value="dinner">Obiady</option>
                             <option value="supper">Kolacje</option>
