@@ -13,3 +13,36 @@
     list-style-type: none;    
 }
 
+.header {
+    display: flex;
+    color: white;
+    margin: 10px auto;
+}
+
+table {
+    margin-top: 120px;
+}
+
+table thead tr th {
+    color: white;
+}
+
+table tbody tr td {
+    color: white;
+}
+
+table button {
+    margin: 5px;
+}
+
+.modalTitle {
+    display: inline-block;
+
+}
+
+.closeModal {
+    float: right;
+    color: white;
+    background-color: grey;
+    border-radius: 30%;
+}

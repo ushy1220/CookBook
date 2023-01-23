@@ -1,5 +1,5 @@
 @import '../../../styles/settings.scss';
-
+/*
 .container {
     border: 1px solid black;
     height: 100vh;
@@ -12,4 +12,41 @@
     margin-top: 200px;
     list-style-type: none;    
 }
+*/
+.header {
+    display: flex;
+    color: white;
+    margin: 10px auto;
+}
 
+table {
+    margin-top: 120px;
+}
+
+table thead tr th {
+    color: white;
+}
+
+table tbody tr td {
+    color: white;
+}
+
+table button {
+    margin: 5px;
+}
+
+.modalTitle {
+    display: inline-block;
+
+}
+
+.closeModal {
+    float: right;
+    color: white;
+    background-color: grey;
+    border-radius: 30%;
+}
+
+.modalIngredients {
+    margin-bottom: 10px;
+}

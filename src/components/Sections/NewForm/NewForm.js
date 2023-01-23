@@ -62,10 +62,13 @@ const NewForm = () => {
                             <input type='text' placeholder='Składnik' name='ingredients' value={ingredients} onChange={e => setIngredients(e.target.value)} required></input>
                         </div>
                         
-                        <button type='submit' className={styles.submitIngredient}>OK</button>
+                        <button type='submit' className={styles.submitIngredient} >OK</button>
                     </div>
                     
                     <div className={styles.ingredientsWrapper}>
+                        <ul>
+
+                        </ul>
                     </div>   
                 </div>        
                 

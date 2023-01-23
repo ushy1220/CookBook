@@ -9,7 +9,7 @@ const Home = () => {
             <NewRecipeButton />
             <SearchButton />
             <div className={styles.wrapper}>
-                <div className="col">
+                <div className={styles.col}>
                     <a href="/newrecipe" className={styles.link}>
                         <button className={styles.button}>Nowe (Oceń!)</button>
                     </a>
@@ -26,7 +26,7 @@ const Home = () => {
                         <button className={styles.button}>Studenckie</button>
                     </a>
                 </div>
-                <div className='col'>
+                <div className={styles.col}>
                     <a href="/children" className={styles.link}>
                         <button className={styles.button}>Dla dzieci</button>
                     </a>
